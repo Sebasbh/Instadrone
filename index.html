@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+      <link rel="stylesheet" href="index.css">
+      <title>Instadron</title>
+   </head>
+   <body>
+      <!-- CONTENEDOR GENERAL -->
+      <main class="container">
+         <!-- HEADER -->
+         <section class="header" id="header">
+         <!-- BOTON HAMBURGESA -->
+            <div class ="btn_hamburgesa">
+               <span class="material-symbols-outlined" onclick="openNav()" > menu </span> 
+            </div> 
+
+            <!-- CONTENEDOR DEL LOGO -->
+            <div class="logo"> 
+               <img class="logo1" src="Fotos/logo_dron.png" alt="">
+               <img class="logo2" src="Fotos/logo_marca.png" alt="">
+            </div>
+            <!-- BOTONES NAVEGADOR -->
+            <nav class="nav">
+                  <a><span class="material-symbols-outlined"> search </span></a>
+                  <a><span class="material-symbols-outlined"> account_circle </span></a>
+                  <!-- Icono Carrito-->
+                  <div class="container_icon">
+                     <a class="shopping_cart"><span class="material-symbols-outlined">shopping_cart </span></a>
+                     <!-- Contador de productos-->
+                     <div class="count_products"><span class="contador_productos">0</span></div>
+                     <!-- Pop up productos-->
+                     <div class="container-cart-products hidden-cart">
+                        <div class="empty_car">
+                              <p class="mns-cesta-vacia">Carrito Vacío</p>
+                        </div>
+                        <div class="row-product">
+                           <div class="cart-product">
+                              <div class="info-cart-product">
+                              
+                                <div class="card_imagen_carrito_pop_up">
+                                    <img src="Fotos drones/SWIFT-8H.png" alt="">
+                                 </div>
+                                 <span class="cantidad-producto-carrito">1</span>
+                                 <div class="contenido-producto-carrito">
+                                    <h3 >SWIFT-8H</h3>
+                                 </div>
+                                 <span class="precio-producto-carrito">180€</span>
+                                 </div>
+                              </div>
+                           </div>
+                          
+                           <!-- Total-->
+                           <div class="cart-total">
+                              <h3>Total:</h3>
+                                 <span class="total-pagar">€0</span>
+                              </div> 
+                              <!-- Boton tramitar-->
+                              <div class="btn_carrito">
+                               <a class="carrito" href="carrito\carrito.html">TRAMITAR</a>  
+                           </div>  
+                        </div>
+                     </div>
+            </nav>
+         <!---- Pop-up carrito-->
+         
+         </section>
+         <!-- responsive side nav-->
+         <div class="sideNav" id="sidenav">
+            <a href="#" class="closeBtn" onclick="closeNav()">&#10006;</a>
+            <a href="index.html">Inicio</a>
+            <a href="#">Perfil</a>
+            <a href="#">Buscar</a>
+            <a href="carrito/carrito.html">Carrito</a>
+            <a href="#footer" onclick="closeNav()">Contacto</a>
+         </div>
+
+         <!-- BANER -->
+         <div class="baner">
+            <img src="Fotos/imagenbaner.jpeg" alt="">
+            
+         </div>
+
+         <!-- FILTRO -->
+         <div class="filtro">
+            <div id="filter-button">
+               <button id="show-all-btn" class="btnf show-all-btn">Show All</button>
+               <button class="btnf">Profesional</button>
+               <button class="btnf">Semiprofesional</button>
+               <button class="btnf">Recreativo</button>
+            </div>
+            <div id="filter-button2">
+               <button class="btnf2 sort-btn" data-sort="asc">Ascendente</button>
+               <button class="btnf2 sort-btn" data-sort="des">Descendente</button>
+            </div>
+         </div>
+            
+
+
+         <!-- CONTENEDOR PRODUCTOS -->
+         <section class="card_container products" id="product-section">
+           
+         </section>
+         
+
+
+   <!--FOOTER -->
+   <!-- Sección 1: LOGO -->
+      <footer class="footer-container" id="footer">
+         <div class="boton_footer">
+            <a href="#header"><span  class="material-symbols-outlined boton_arriba" > arrow_upward</span>
+            <p> Volver arriba</p></a>
+         </div>
+         <div class="nombre-web">
+            <img class="logo1" src="Fotos/logo_dron.png" alt="">
+            <img class="logo2" src="Fotos/logo_marca.png" alt="">
+         </div>
+          <!-- Sección 2: CONTACTO-->
+          <div class="contacto">
+             <h3>CONTACTO:</h3>
+            <ul>
+            <li>Calle/Factoria N5-Madrid</li>
+              <li><a href="mail:info@instadrone.com">info@instadrone.com</a></li>
+              <li><a href="tel:912287734">912287734</a></li>
+              
+            </ul>
+          </div>
+          <div class="horario">
+            <h3>HORARIO:</h3>
+            <p>Lunes a Viernes<br>
+             10:OO-14:00 Y 17:00-20:30</p>
+          </div>
+          <!-- Sección 3-->
+          <div class="informacion">
+            <h3>INFORMACIÓN:</h3>
+            <ul>
+              <li>Blog de Drones</li>
+              <li>Proceso de compra</li>
+              <li>Tipos de envío</li>
+              <li>Devoluciones</li>
+              <li>Términos y condiciones</li>
+              <li>Política de privacidad</li>
+            </ul>
+          </div>
+          <!-- Sección 4-->
+          <div class="ayuda">
+            <h3>AYUDA:</h3>
+            <ul>
+              <li>Especialistas en drones</li>
+              <li>Asesoramiento personalizado</li>
+              <li>Servicio Técnico/Postventa</li>
+              <li>Opiniones</li>
+            </ul>
+         </div>
+         <!-- Sección 5-->
+            <div class="redes-sociales">
+               <h3>SÍGUENOS:</h3>
+               <a href="#"><img src="Fotos/icono_facebook.png" alt="Facebook" /></a>
+               <a href="#"><img src="Fotos/icono_twitter.png" alt="Twitter" /></a>
+               <a href="#"><img src="Fotos/icono_instagram.png" alt="Instagram" /></a>
+               <a href="#"><img src="Fotos/icono_youtube.png" alt="Youtube" /></a>
+            </div>
+            <!-- Sección 6: Derechos de autor y políticas -->
+         <div class="copyright">
+            <p>©️ 2023 Instadron, Inc.Informacion legal | Politica de privacidad.</p>
+         </div>
+
+   </footer>
+   </main>
+      <script type = "text/javascript" src="./js/productos.js"></script> 
+      <script type = "text/javascript" src="./js/app.js"></script> 
+      <script type = "text/javascript" src="./js/index.js"></script> 
+   </body>
+</html>
